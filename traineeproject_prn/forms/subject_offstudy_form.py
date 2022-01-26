@@ -1,0 +1,2 @@
+class SubjectOffStudyForm():
+    pass
