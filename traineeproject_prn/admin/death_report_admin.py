@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.db import models
 from ..admin_site import traineeproject_prn_admin
 from edc_model_admin import audit_fieldset_tuple
-from .modeladmin_mixins import ModelAdminMixin
+from .model_admin_mixins import ModelAdminMixin
 from ..models import DeathReport
 from ..forms import DeathReportForm
 

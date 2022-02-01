@@ -7,6 +7,7 @@ from edc_action_item.model_mixins import ActionModelMixin
 from edc_base.model_fields.custom_fields import OtherCharField
 from edc_base.model_managers import HistoricalRecords
 from edc_base.utils import get_utcnow
+from edc_constants.choices import YES_NO
 from edc_identifier.managers import SubjectIdentifierManager
 from edc_protocol.validators import (
     date_not_before_study_start, datetime_not_before_study_start)
@@ -36,6 +37,11 @@ class SubjectOffStudy(ActionModelMixin,BaseUuidModel):
         validators=[date_not_before_study_start, datetime_not_before_study_start],
         null=True,
         default=get_utcnow,)
+
+    completed_study = models.CharField(
+        verbose_name='Did the subject complete the study?',
+        max_length=3,
+        choices=YES_NO)   
 
     reason = models.CharField(
         verbose_name='Reason for exit',

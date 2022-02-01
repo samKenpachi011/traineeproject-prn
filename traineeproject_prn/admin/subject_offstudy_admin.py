@@ -3,8 +3,7 @@ from edc_model_admin import audit_fieldset_tuple
 from ..admin_site import traineeproject_prn_admin
 from ..models import SubjectOffStudy
 from ..forms import SubjectOffStudyForm
-from ..admin_site import traineeproject_prn_admin
-from .modeladmin_mixins import ModelAdminMixin
+from .model_admin_mixins import ModelAdminMixin
 
 @admin.register(SubjectOffStudy, site=traineeproject_prn_admin)
 class SubjectOffStudyAdmin(ModelAdminMixin,admin.ModelAdmin):
