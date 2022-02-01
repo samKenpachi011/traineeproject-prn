@@ -8,11 +8,13 @@ from .admin_site import traineeproject_prn_admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', RedirectView.as_view(url='admin/'), name='home_url'),
+
 ]
 
 if settings.APP_NAME == 'traineeproject_prn':
     from django.contrib import admin
 
     urlpatterns += [
-        path('', amdin.s)
+        path('admin/', admin.site.urls)
     ]
