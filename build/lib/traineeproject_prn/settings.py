@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'edc_device.apps.AppConfig',
     'edc_identifier.apps.AppConfig',
     'edc_prn.apps.AppConfig',
-    'traineeproject_prn.apps.AppConfig',
+    'traineeproject_prn.apps.AppConfig'
 ]
 
 MIDDLEWARE = [
