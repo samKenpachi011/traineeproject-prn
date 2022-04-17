@@ -33,7 +33,7 @@ class DeathReportAction(Action):
 
 class SubjectOffStudyAction(Action):
     name = SUBJECT_OFFSTUDY_ACTION
-    display_name = 'Enroll to sub-study'
+    display_name = 'Submit Subject Offstudy'
     reference_model = 'traineeproject_prn.subjectoffstudy'
     show_link_to_changelist = True
     show_link_to_add = True

@@ -22,6 +22,7 @@ traineeproject_prn/forms/__init__.py
 traineeproject_prn/forms/death_report_form.py
 traineeproject_prn/forms/subject_offstudy_form.py
 traineeproject_prn/migrations/0001_initial.py
+traineeproject_prn/migrations/0002_auto_20220310_1514.py
 traineeproject_prn/migrations/__init__.py
 traineeproject_prn/models/__init__.py
 traineeproject_prn/models/death_report.py

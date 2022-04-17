@@ -61,12 +61,13 @@ class SubjectOffStudy(ActionModelMixin,BaseUuidModel):
         return (self.subject_identifier)
     natural_key.dependencies = ['sites.Site']
 
+    objects = SubjectIdentifierManager()
+    
+    history = HistoricalRecords()
+    
     def save(self, *args, **kwargs):
         self.consent_version = None
         super().save(*args, **kwargs)  
-
-    objects = SubjectIdentifierManager()
-    history = HistoricalRecords()
 
     class Meta:
         app_label = 'traineeproject_prn'
